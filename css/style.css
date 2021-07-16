@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+
+*{
+
+    margin:0;
+    padding:0;
+    outline:none;
+}
+
+body {
+
+    background: #fafafa;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+a {
+
+    text-decoration: none;
+    transition: 600ms ease;
+}
+
+
+img {
+
+    max-width: 100%;
+}
+
+header{
+
+    width: 90%;
+    padding:20px 5%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .logo{
+
+     font-size: 25px;
+     font-weight: 700;
+}
+
+
+header > .nav {
+
+    position: relative;
+    left: -50px
+}
+
+header > .nav a {
+
+    margin:0 15px;
+    display: inline-block;
+    color:#a3a3a3;
+    
+}
+
+header > .nav a:hover{
+    
+    color:#4f4e4e;
+}
+
+header > .menu {
+
+     cursor: pointer;
+     color: #a3a3a3;
+     font-size: 23px;
+}
+
+.fixed {
+
+    position: sticky;
+    top:0;
+    left:0;
+    border-bottom: 2px solid silver;
+}
+
+#hidden-menu {
+
+    width:300px;
+    position:fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    background: #fff;
+    z-index:10;
+    text-align: center;
+}
+
+
+#hidden-menu .close{
+
+    font-size: 40px;
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+    cursor:pointer;
+
+    transition: color 600ms ease;
+    
+}
+
+#hidden-menu .close:hover { color:#ccc}
+
+#hidden-menu h2{
+
+     margin-top: 100px;
+     margin-bottom: 20px;
+}
+
+#hidden-menu ul{list-style:none}
+
+#hidden-menu ul li{
+
+    display:block;
+    margin-bottom: 10px;
+}
+
+#hidden-menu ul li a{color:#333}
+
+#hidden-menu ul li a:hover{color:#ccc}
+
+.full-page,.bg-fixed {
+
+     height:95vh;
+     background: url('../img/pic3.jpg') no-repeat center center;
+     background-attachment: fixed;
+     background-size: cover;
+     background-blend-mode: multiply;
+     background-color: #3b3b3b;
+     text-align: center;
+     color:#fff
+}
+
+
+.full-page h1{
+
+    padding-top: 250px;
+    font-size: 45px;
+    width:500px;
+    margin:0 auto;
+}
+
+.full-page h3{
+
+    
+    margin:20px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#ccc;
+}
+
+.full-page button,
+.bg-fixed button{
+
+    padding: 15px 25px;
+    border-radius: 5px;
+    border:0;
+    font-size: 14px;
+    cursor:pointer;
+    background: #ffc107;
+    color:#704404;
+    font-weight: 500;
+   
+}
+
+
+.full-page button i,
+.bg-fixed button i{
+
+     margin-left:5px;
+     transition: margin 600ms ease;
+}
+
+
+.full-page button:hover,
+.bg-fixed button:hover{background: #ff9800;}
+
+
+.full-page button:hover i,
+.bg-fixed button:hover i {
+
+     margin-left:15px;
+}
+
+.features {
+
+    display:flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.features > div  {
+
+    width: 300px;
+    text-align: center;
+    margin-bottom:10px 30px;
+}
+
+
+
+ .features > div img {
+
+    width: 80px;
+    margin-bottom:10px;
+} 
+
+
+.features > div h4  {
+
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color:#454545;
+}
+
+
+.features > div p {
+
+     font-weight: 200;
+}
+
+.bg-fixed{
+
+    height: 300px;
+   
+}
+
+.bg-fixed h3 {
+
+    font-size: 25px;
+    padding-top: 130px;
+    margin-bottom: 20px;
+}
+
+
+
+.bg-fixed input {
+
+    font-size: 14px;
+    padding: 14px 20px;
+    width:300px;
+    border: 0;
+    border-radius: 5px;
+    background: #fafafa;
+  ;
+}
+
+
+footer{
+
+
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%;
+}
+
+footer .up-btn,
+footer .social div{
+
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #eee;
+    border:1px solid silver;
+    cursor:pointer;
+    color:#3b3b3b;
+    transition:  transform 600ms ease;
+}
+
+footer .up-btn:hover,
+footer .social div:hover {
+
+     transform: translateY(-10px);
+}
+
+footer .social div {
+
+    display:inline-block;
+}
+
+@media screen and (max-width: 700px) {
+   
+    .nav a {
+      display:none;
+    }
+  
+  }
+
+  @media screen and (max-width: 700px) {
+    .nav {
+      background-color: lightgreen;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+   
+    .social div {
+      display:block;
+    }
+  
+  }
